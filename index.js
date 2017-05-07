@@ -16,6 +16,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/v1/unsplash', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
   res.json({
     data: {
       images: [
@@ -28,6 +31,8 @@ app.get('/api/v1/unsplash', (req, res) => {
 });
 
 app.get('/api/v2/unsplash', (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.setHeader('Content-Type', 'application/json');
 
   res.send(JSON.stringify({ data:
