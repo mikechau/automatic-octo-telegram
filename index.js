@@ -27,6 +27,20 @@ app.get('/api/v1/unsplash', (req, res) => {
   });
 });
 
+app.get('/api/v2/unsplash', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+
+  res.send(JSON.stringify({ data:
+    {
+      images: [
+        `https://${APP_URL}/images/image_001.png`,
+        `https://${APP_URL}/images/image_002.png`,
+        `https://${APP_URL}/images/image_003.png`
+      ]
+    }
+  }) + ';;');
+});
+
 app.listen(PORT, () => {
   console.log('Node app is running on port', PORT);
 });
