@@ -1,0 +1,23 @@
+{
+  "name": "automatic-octo-telegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikechau/automatic-octo-telegram.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikechau/automatic-octo-telegram/issues"
+  },
+  "homepage": "https://github.com/mikechau/automatic-octo-telegram#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
