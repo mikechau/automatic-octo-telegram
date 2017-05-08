@@ -22,9 +22,9 @@ app.get('/api/v1/unsplash', (req, res) => {
   res.json({
     data: {
       images: [
-        `https://${APP_URL}/images/image_001.png`,
-        `https://${APP_URL}/images/image_002.png`,
-        `https://${APP_URL}/images/image_003.png`
+        `${APP_URL}/images/image_001.png`,
+        `${APP_URL}/images/image_002.png`,
+        `${APP_URL}/images/image_003.png`
       ]
     }
   });
@@ -38,9 +38,9 @@ app.get('/api/v2/unsplash', (req, res) => {
   res.send(JSON.stringify({ data:
     {
       images: [
-        `https://${APP_URL}/images/image_001.png`,
-        `https://${APP_URL}/images/image_002.png`,
-        `https://${APP_URL}/images/image_003.png`
+        `${APP_URL}/images/image_001.png`,
+        `${APP_URL}/images/image_002.png`,
+        `${APP_URL}/images/image_003.png`
       ]
     }
   }) + ';;');
